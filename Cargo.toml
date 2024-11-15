@@ -1,0 +1,8 @@
+[package]
+name = "Rust101"
+version = "1.82.0"
+edition = "2021"
+
+[dependencies]
+rusqlite = "0.32.1"
+chrono = "0.4.38"
