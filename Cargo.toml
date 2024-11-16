@@ -6,3 +6,5 @@ edition = "2021"
 [dependencies]
 rusqlite = "0.32.1"
 chrono = "0.4.38"
+prettytable-rs = "^0.10"
+regex = "1.11.1"
