@@ -1,21 +1,5 @@
-use std::fmt;
 use prettytable::{Table, Row, Cell};
 
-pub enum Status {
-    NotStarted,
-    InProgress,
-    Completed
-}
-impl fmt::Display for Status {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        let status_str = match self {
-            Self::NotStarted => "Not Started",
-            Self::InProgress => "In Progress",
-            Self::Completed => "Completed"
-        };
-        write!(f, "{}", status_str)
-    }
-}
 
 pub fn init_table() -> Table {
     let mut table = Table::new();
